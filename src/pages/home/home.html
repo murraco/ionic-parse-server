@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Home</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="signout()">
+        <ion-icon name="log-out"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+
+    <ion-item-divider color="primary-light">
+      Add Score
+    </ion-item-divider>
+    <ion-item>
+      <ion-input type="text" placeholder="Name" [(ngModel)]="newScore.playerName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" placeholder="Score" [(ngModel)]="newScore.score"></ion-input>
+    </ion-item>
+    <ion-item no-lines>
+      <button ion-button icon-left color="accent" (click)="postGameScore()"><ion-icon name="checkmark-circle"></ion-icon>Submit</button>
+    </ion-item>
+
+    <ion-item-divider color="primary-light">
+      Current Scores
+    </ion-item-divider>
+    <ion-item *ngFor="let gameScore of gameScores">
+      <h2>{{ gameScore.get('playerName') }}</h2>
+      <p>{{ gameScore.get('score') }}</p>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-infinite-scroll (ionInfinite)="$event.waitFor(listScores())">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+</ion-content>

@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Signup</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <form (submit)="doRegister()">
+    <ion-list inset padding>
+
+      <ion-item>
+        <ion-label stacked>Username</ion-label>
+        <ion-input type="text" [(ngModel)]="username" name="username"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Password</ion-label>
+        <ion-input type="password" [(ngModel)]="password" name="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Verify Password</ion-label>
+        <ion-input type="password" [(ngModel)]="confirm" name="verify"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Email</ion-label>
+        <ion-input type="email" [(ngModel)]="email" name="confirm"></ion-input>
+      </ion-item>
+
+      <div padding>
+        <button ion-button color="accent" block [disabled]="email.length == '0' || username.length == '0' || password.length == '0' || confirm.length == '0'">Register</button>
+      </div>
+
+    </ion-list>
+  </form>
+
+</ion-content>
