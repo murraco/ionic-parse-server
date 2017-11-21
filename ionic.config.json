@@ -1,5 +1,5 @@
 {
-  "name": "Ionic 3, Angular 2+ and Parse Server",
+  "name": "ionic-parse-server",
   "app_id": "",
   "type": "ionic-angular",
   "integrations": {
