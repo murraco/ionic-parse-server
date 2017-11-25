@@ -1,1 +1,6 @@
-page-signup {}
+page-signup {
+    ::-webkit-scrollbar,
+    *::-webkit-scrollbar {
+      display: none;
+    }
+}
