@@ -12,6 +12,8 @@
 
 This is a simple starter for integrating Ionic 3, Angular 2+ and Parse Server. It provides a small PoC (Proof of Concept) app for adding/removing scores and uses signin/signout based on Parse Server. You can just use it as the foundation for your next big app.
 
+You can also find this starter in the Ionic Market, just click [here](https://market.ionicframework.com/starters/ionic-parse-server).
+
 ## Some screenshots
 
 <p align="center">
@@ -93,6 +95,7 @@ ionic-parse-server/
 ├── ionic.config.json             * Ionic configuration file
 ├── LICENSE                       * MIT License
 ├── package.json                  * Defines our JavaScript dependencies
+├── package-lock.json             * Defines our exact JavaScript dependencies tree
 ├── README.md                     * This file
 ├── tsconfig.json                 * Defines the root files and the compiler options
 ├── tslint.json
