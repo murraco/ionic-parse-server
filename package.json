@@ -1,8 +1,8 @@
 {
   "name": "ionic-parse-server",
   "version": "1.0.0",
-  "author": "Mauricio Urraco",
-  "homepage": "https://github.com/murraco/",
+  "author": "Mauricio Urraco mauriurraco@gmail.com",
+  "homepage": "https://github.com/murraco/"
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
