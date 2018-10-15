@@ -10,7 +10,7 @@
 
 # About this starter
 
-This is a simple starter for integrating Ionic 3, Angular 2+ and Parse Server. It provides a small PoC (Proof of Concept) app for adding/removing scores and uses signin/signout based on Parse Server. You can just use it as the foundation for your next big app.
+This is a simple starter for integrating Ionic 3, Angular 4+ and Parse Server. It provides a small PoC (Proof of Concept) app for adding/removing scores and uses signin/signout based on Parse Server. You can just use it as the foundation for your next big app.
 
 You can also find this starter in the Ionic Market, just click [here](https://market.ionicframework.com/starters/ionic-parse-server).
 
