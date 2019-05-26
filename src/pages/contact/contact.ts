@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { App, NavController } from 'ionic-angular';
+import { App } from 'ionic-angular';
 
 // Providers
 import { AuthProvider } from '../../providers/auth/auth';
@@ -13,7 +13,7 @@ import { SigninPage } from '../signin/signin';
 })
 export class ContactPage {
 
-  constructor(private auth: AuthProvider, private navCtrl: NavController, private app: App) { }
+  constructor(private auth: AuthProvider, private app: App) { }
 
   ionViewCanEnter(): boolean {
     return this.auth.authenticated();
