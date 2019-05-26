@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { App, NavController } from 'ionic-angular';
+import { App } from 'ionic-angular';
 
 // Providers
 import { ParseProvider } from '../../providers/parse/parse';
@@ -16,7 +16,7 @@ export class HomePage {
   newScore = { playerName: null, score: null };
   gameScores = [];
 
-  constructor(private parseProvider: ParseProvider, private auth: AuthProvider, private navCtrl: NavController, private app: App) {
+  constructor(private parseProvider: ParseProvider, private auth: AuthProvider, private app: App) {
     this.listScores();
   }
 

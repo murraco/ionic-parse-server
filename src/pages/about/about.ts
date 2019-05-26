@@ -13,7 +13,7 @@ import { SigninPage } from '../signin/signin';
 })
 export class AboutPage {
 
-  constructor(private auth: AuthProvider, private navCtrl: NavController, private app: App) { }
+  constructor(private auth: AuthProvider, private app: App) { }
 
   ionViewCanEnter(): boolean {
     return this.auth.authenticated();
