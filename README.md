@@ -1,7 +1,5 @@
  # Ionic Parse Server
 
-![](https://img.shields.io/badge/build-success-brightgreen.svg)
-
 # Stack
 
 ![](https://img.shields.io/badge/ionic_3-✓-blue.svg)
