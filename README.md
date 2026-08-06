@@ -1,23 +1,54 @@
- # Ionic Parse Server
+> **Archived.** This stack is EOL (Ionic 3 / Cordova / Angular 4-era) and the repo no longer
+> builds — dependency versions in `package.json` are mutually incompatible. For a current
+> starter, look at [Ionic 8 + Capacitor](https://ionicframework.com/docs); Parse Server
+> itself is still actively maintained, just not this integration.
 
-# Stack
+# Ionic Parse Server
+
+A simple starter for integrating Ionic 3, Angular 4+ and Parse Server. It provides a small PoC (Proof of Concept) app for adding/removing scores and uses signin/signout based on Parse Server. You can just use it as the foundation for your next big app.
+
+## Stack
 
 ![](https://img.shields.io/badge/ionic_3-✓-blue.svg)
 ![](https://img.shields.io/badge/angular_2+-✓-blue.svg)
 ![](https://img.shields.io/badge/parse_server-✓-blue.svg)
 
-# About this starter
-
-This is a simple starter for integrating Ionic 3, Angular 4+ and Parse Server. It provides a small PoC (Proof of Concept) app for adding/removing scores and uses signin/signout based on Parse Server. You can just use it as the foundation for your next big app.
-
-## Some screenshots
+## Screenshots
 
 <p align="center">
-  <img src="https://github.com/murraco/ionic-parse-server/blob/master/signin.png" width="40%" />
-  <img src="https://github.com/murraco/ionic-parse-server/blob/master/home.png" width="40%" />
+  <img src="https://github.com/murraco/ionic-parse-server/blob/master/signin.png" width="40%" alt="Sign in screen" />
+  <img src="https://github.com/murraco/ionic-parse-server/blob/master/home.png" width="40%" alt="Home screen" />
 </p>
 
-# File structure
+## Introduction
+
+### Ionic Framework
+
+The Ionic framework allows for the creation of highly interactive, **cross-platform mobile applications** that can be deployed across iOS, Android, and Windows devices. These hybrid applications include native functionalities, exhaustive gestures, and customizable tools to enhance user-friendliness. Those powerful capabilities are brought to Ionic because it provides mobile-friendly `HTML`, `JS`, and `CSS` components to developers.
+
+Some of its advantages are:
+
+- Open source
+- Code once, run on all mobile devices
+- One programming language for all mobile OS
+- Use of well-known web technologies
+- A huge community
+
+### Parse Server
+
+**Parse Server** is an open source version of the Parse backend that can be deployed to any infrastructure that can run `Node.js`. It works with the Express web application framework and can be added to existing web applications, or run by itself. Its repository on [Github](https://github.com/parse-community/parse-server) is very active with ~165 contributors and ~14K stars so even if you didn't use the hosted Parse platform before, its open source version is a wise choice if you need to build a backend for you mobile app or your clients apps.
+
+Parse offer a backend to store data, push notifications, social media integration for your app etc. The features provided tend to be helpful in prototyping quickly.
+
+- **General Purpose**: Open Source
+- **Hosting**: Self-hosting or Parse Server Hosting providers. Supports local testing and development
+- **Custom Code**: Supported via Cloud Code
+- **Database**: Mongo DB
+- **Push**: Support push notifications for Android, iOS. Also users can manage Push Notifications campaigns
+- **Storage**: No restricted time limits and no file storage restrictions. Control over backup, restore and database indexes
+- **Ideal for**: General purpose applications
+
+## File structure
 
 ```
 ionic-parse-server/
@@ -98,33 +129,7 @@ ionic-parse-server/
 └── *.png                         * Images for the README.md
 ```
 
-## Ionic Framework
-
-The Ionic framework allows for the creation of highly interactive, **cross-platform mobile applications** that can be deployed across iOS, Android, and Windows devices. These hybrid applications include native functionalities, exhaustive gestures, and customizable tools to enhance user-friendliness. Those powerful capabilities are brought to Ionic because it provides mobile-friendly `HTML`, `JS`, and `CSS` components to developers.
-
-Some of its advantages are:
-
-- Open source
-- Code once, run on all mobile devices
-- One programming language for all mobile OS
-- Use of well-known web technologies
-- A huge community
-
-## Parse Server
-
-**Parse Server** is an open source version of the Parse backend that can be deployed to any infrastructure that can run `Node.js`. It works with the Express web application framework and can be added to existing web applications, or run by itself. Its repository on [Github](https://github.com/parse-community/parse-server) is very active with ~165 contributors and ~14K stars so even if you didn't use the hosted Parse platform before, its open source version is a wise choice if you need to build a backend for you mobile app or your clients apps.
-
-Parse offer a backend to store data, push notifications, social media integration for your app etc. The features provided tend to be helpful in prototyping quickly.
-
-- **General Purpose**: Open Source
-- **Hosting**: Self-hosting or Parse Server Hosting providers. Supports local testing and development
-- **Custom Code**: Supported via Cloud Code
-- **Database**: Mongo DB
-- **Push**: Support push notifications for Android, iOS. Also users can manage Push Notifications campaigns
-- **Storage**: No restricted time limits and no file storage restrictions. Control over backup, restore and database indexes
-- **Ideal for**: General purpose applications
-
-## How to use this starter?
+## Quick start
 
 1. Install Ionic
 
@@ -168,7 +173,7 @@ Parse offer a backend to store data, push notifications, social media integratio
   
 7. Navigate to `http://localhost:8100` in your browser
 
-## Or if you only want to add Parse Server to your project
+## Adding Parse Server to an existing project
 
 1. Go to the project directory:
 
@@ -209,13 +214,19 @@ private parseInitialize() {
 ```
 **That's all!** Just create a provider, import Parse and start writing code
 
-# Contribution
+## Contribution
 
 - Report issues
 - Open pull request with improvements
 - Spread the word
 - Reach out to me directly at <mauriurraco@gmail.com>
 
-# Buy me a coffee to show your support!
+## License
+
+Released under the [MIT License](LICENSE).
+
+## Support
+
+If this project helped you, consider buying me a coffee ☕️
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/murraco)
